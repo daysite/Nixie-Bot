@@ -127,7 +127,7 @@ let menu = `
 
 🏳️ By Daniel`.trim()
 //conn.sendFile(m.chat, pp, 'lp.jpg', menu, m, false, { contextInfo: { mentionedJid }})
-let img = await (await fetch(`https://telegra.ph/file/940ac494d7ca5ca132fea.jpg`)).buffer()  
+let img = await (await fetch(`https://telegra.ph/file/1c168613f6d5a0c9c35eb.jpg`)).buffer()  
 /*await conn.sendMessage(m.chat, {
 text: menu,
 contextInfo: { 
@@ -141,7 +141,7 @@ sourceUrl: 'https://chat.whatsapp.com/Kw0ow5PyFN62GBs8rJT5Kv',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})*/
-conn.sendButton(m.chat, menu, wm, 'https://telegra.ph/file/940ac494d7ca5ca132fea.jpg', [['Owner', `.owner`]], null, [['Canal', `${channel}`]], m)
+conn.sendButton(m.chat, menu, md, 'https://telegra.ph/file/1c168613f6d5a0c9c35eb.jpg', [['Owner', `.owner`]], null, [['Canal', `${channel}`]], m)
 
 await m.react('✅')	
 } catch (e) {
