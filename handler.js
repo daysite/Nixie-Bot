@@ -494,16 +494,16 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 const msg = {
-rowner: '「👑」 *Esta función solo puede ser usada por mi creador*\n\n> DevDiego.', 
-owner: '「👑」 *Esta función solo puede ser usada por mi desarrollador.', 
-mods: '「🤴🏻」 *Esta función solo puede ser usada por mis desarrolladores.*', 
-premium: '「🍧」 *Esta función solo es para usuarios Premium.', 
-group: '「🐢」 *Esta funcion solo puede ser ejecutada en grupos.*', 
-private: '「🍭」 *Esta función solo puede ser usada en chat privado.*', 
-admin: '「👑」 *Este comando solo puede ser usado por admins.*', 
-botAdmin: '「🚩」 *Para usar esta función debo ser admin.*', 
-unreg: '「🍟」 *¡Hey! no estas registrado, registrese para usar esta función*\n\n*/reg nombre.edad*\n\n*_❕ Ejemplo_* : */reg Yaemori.666*',
-restrict: '「💫」 *Esta característica esta desactivada.*'
+rowner: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por el *Creador* de la Bot.`,
+owner: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por el *Creador* de la Bot y *Sub Bots*.`,
+mods: `> AVISO \n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Moderadores* de la Bot.`,
+premium: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por Usuarios *Premium*.`,
+group: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en *Grupos*.`,
+private: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado en mi Chat *Privado*.`,
+admin: `> AVISO\n\nHola @${m.sender.split`@`[0]}, este comando solo puede ser utilizado por los *Administradores* del Grupo.`,
+botAdmin: `>AVISO\n\nHola @${m.sender.split`@`[0]}, la bot debe ser *Administradora* para ejecutar este Comando.`,
+unreg: `> AVISO\n\nHola @${m.sender.split`@`[0]}, para usar este comando debes estar *Registrado.*\n\nUtiliza: */reg nombre.edad*\n\n_Ejemplo: */reg Daniel.18*_`,
+restrict: `> AVISO\n\nHola @${m.sender.split`@`[0]}, esta caracterÃ­stica estÃ¡ *deshabilitada*`  
 }[type];
 if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))}
 
