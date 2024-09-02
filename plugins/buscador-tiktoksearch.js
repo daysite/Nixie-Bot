@@ -19,7 +19,7 @@ conn.reply(message.chat, '🚩 *Descargando Su Video...*', message, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
 title: packname,
 body: wm,
-previewType: 0, thumbnail: icons,
+previewType: 0, thumbnail: 'https://telegra.ph/file/474de03b8c0cf87231d8e.jpg',
 sourceUrl: channel }}})
 let results = []
 let { data: response } = await axios.get('https://apis-starlights-team.koyeb.app/starlight/tiktoksearch?text=' + text)
