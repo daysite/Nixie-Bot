@@ -11,12 +11,12 @@ if (!play) return conn.reply(m.chat, `No se encontraron resultados`, m)
 
 let { title, thumbnail, ago, timestamp, views, videoId, url } = play;
 
-let txt = '';
-txt += `> _Título_ : *${title || '❌'}*\n`;
-txt += `> _Creado_ : *${ago || '❌'}*\n`;
-txt += `> _Duración_ : *${timestamp || '❌'}*\n`;
-txt += `> _Visitas_ : *${views.toLocaleString() || '❌'}*\n`;
-txt += `> _Link_ : *https://www.youtube.com/watch?v=${videoId}*\n`;
+let txt = '*`[ YOUTUBE - PLAY ]`*\n';
+txt += `> Título : *${title || '❌'}*\n`;
+txt += `> Creado : *${ago || '❌'}*\n`;
+txt += `> Duración : *${timestamp || '❌'}*\n`;
+txt += `> Visitas : *${views.toLocaleString() || '❌'}*\n`;
+txt += `> Link : *https://www.youtube.com/watch?v=${videoId}*\n`;
 
 await conn.sendButton(m.chat, txt, author, thumbnail, [
 ['Audio', `${usedPrefix}ytmp3 ${url}`],
