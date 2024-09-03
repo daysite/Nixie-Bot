@@ -35,7 +35,7 @@ await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video
 await m.react(done)
 } catch {
 //await m.react(error)
-return conn.reply(m.chat, '🚩 *Error al enviar el video.*', m, rcanal)}}
+//return conn.reply(m.chat, '🚩 *Error al enviar el video.*', m, rcanal)}}
 
 handler.help = ['facebook', 'fb']
 handler.tags = ['descargas']
