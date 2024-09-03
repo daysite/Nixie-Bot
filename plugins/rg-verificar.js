@@ -1,47 +1,43 @@
-import db from '../lib/database.js'
 import { createHash } from 'crypto'
-import fs from 'fs'
-import fetch from 'node-fetch'
-
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
-  let user = global.db.data.users[m.sender]
+let user = db.data.users[m.sender]
+let totalreg = Object.keys(global.db.data.users).length
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) return m.reply(`🍭 Ya estás registrado.\n\n*¿Quiere volver a registrarse?*\n\nUse este comando para eliminar su registro.\n*${usedPrefix}unreg*`)
-  if (!Reg.test(text)) return m.reply(`🌹 Formato incorrecto.\n\nUso del comamdo: *${usedPrefix + command} nombre.edad*\nEjemplo : *${usedPrefix + command} ${name2}.666*`)
+  if (user.registered === true) throw `Ya eatas registrado pdj 😎`
+  if (!Reg.test(text)) throw `𝐔𝐬𝐨 𝐃𝐞𝐥 𝐂𝐨𝐦𝐚𝐧𝐝𝐨: ${usedPrefix + command} nombre.edad\n💻 Nota: ${usedPrefix + command} ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
-  if (!name) return m.reply('🚩 El nombre no puede estar vacío.')
-  if (!age) return m.reply('🚩 La edad no puede estar vacía.')
-  if (name.length >= 100) return m.reply('🚩 El nombre es demasiado largo.' )
+  if (!name) throw '🚩 El nombre no puede estar vacio'
+  if (!age) throw '🚩 La edad en necesaria'
+  if (name.length >= 30) throw '💫 El nombre es muy largo' 
   age = parseInt(age)
-  if (age > 100) return m.reply('👴🏻 Wow el abuelo quiere jugar al bot.')
-  if (age < 5) return m.reply('🚼  hay un abuelo bebé jsjsj. ')
+  if (age > 100) throw '😊 Un abuelo quiere ser la bot'
+  if (age < 5) throw '✏️ la bebé juega con WhatsApp'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
   user.registered = true
-  global.db.data.users[m.sender].money += 600
-  global.db.data.users[m.sender].estrellas += 10
-  global.db.data.users[m.sender].exp += 245
-  global.db.data.users[m.sender].joincount += 5
+global.db.data.users[m.sender].money += 900
+global.db.data.users[m.sender].limit += 50
+global.db.data.users[m.sender].exp += 500
+global.db.data.users[m.sender].joincount += 20
   let sn = createHash('md5').update(m.sender).digest('hex')
-let regbot = `👤 𝗥 𝗘 𝗚 𝗜 𝗦 𝗧 𝗥 𝗢 👤\n`
-regbot += `•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•\n`
-regbot += `「💭」𝗡𝗼𝗺𝗯𝗿𝗲: ${name}\n`
-regbot += `「✨️」𝗘𝗱𝗮𝗱: ${age} años\n`
-regbot += `•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•\n`
-regbot += `「🎁」𝗥𝗲𝗰𝗼𝗺𝗽𝗲𝗻𝘀𝗮𝘀:\n`
-regbot += `• 15 Estrellas 🌟\n`
-regbot += `• 5 MiniCoins 🪙\n`
-regbot += `• 245 Experiencia 💸\n`
-regbot += `• 12 Tokens 💰\n`
-regbot += `•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•\n`
-regbot += `${packname}`
-await m.react('📩')
-await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, channel, m)
-}
-handler.help = ['reg']
-handler.tags = ['rg']
-handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar'] 
+  await conn.reply(m.chat,  ` 乂  R E G I S T R O  乂
 
+• Usuario: ${name}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+• Edas: ${age} 𝖠𝗇̃𝗈𝗌
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🚩 *Recompensas Por El Registro:*
+• 50 Diamantes 💎
+• 900 NixieCoins 💰
+• 500 Experiencia 💸
+• 20 Tokens 🪙
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+Usuarios Registrados: ${rtotalreg}`, m, {contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, title: '> 乂  R E G I S T R O  乂',  body: 'Registro exitoso 📝: By Nixie', previewType: 0, thumbnail: 'https://telegra.ph/file/29fbd0aa631b2da8a3c8d.jpg', sourceUrl: [md, channel, yt, fb].getRandom()}}})
+//await m.reply(`${sn}`)}
+handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
+handler.tags = ['xp']
+handler.command = /^(verify|verificar|registrar|reg(ister)?)$/i
 export default handler
