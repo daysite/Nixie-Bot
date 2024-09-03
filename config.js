@@ -34,8 +34,8 @@ global.namechannel = '【 ✯ Starlights Team - Oficial Chanel ✰ 】'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.catalogo = fs.readFileSync('./storage/img/catalogo.png')
-global.miniurl = fs.readFileSync('./storage/img/miniurl.jpg')
+global.catalogo = fs.readFileSync('./media/catalogo.jpg')
+global.miniurl = fs.readFileSync('./media/Menu2.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
