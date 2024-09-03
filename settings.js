@@ -25,18 +25,18 @@ global.prems = []
 //cambiar a true si el bot detecta sus propios comandos.
 global.isBaileysFail = false
 global.libreria = 'Baileys'
-global.baileys = 'V 6.7.7'
+global.baileys = '@whiskeysockets/baileys'
 global.sessions = 'MiniSession'
 global.jadi = 'MiniJadiBot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '⪛✰ 𝐀𝐢 𝐘𝐚𝐞𝐦𝐨𝐫𝐢 - 𝐌𝐃 ✰⪜'
-global.botname = '© ᥡᥲᥱm᥆rі ᑲ᥆𝗍 - mძ'
-global.wm = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ ᥡᥲᥱm᥆rіᑲ᥆𝗍 ☄︎'
-global.author = 'ᥴrᥱᥲ𝗍ᥱძ ᑲᥡ ძᥱ᥎-ძіᥱg᥆ ᰔᩚ'
-global.dev = '© ⍴᥆ᥕᥱrᥱძ ᑲᥡ sᥙᥒᥣіgһ𝗍 𝗍ᥱᥲm ⚡︎'
-global.textbot = 'ᥲі ᥡᥲᥱm᥆rі : ᥆𝖿ᥴძіᥱg᥆ 🚩'
+global.packname = '⪛✰ Nixie - Bot ✰⪜'
+global.botname = '© Nixie Bot - MD'
+global.wm = '© powered by Nixie ☄︎'
+global.author = 'created by Daniel ᰔᩚ'
+global.dev = '© powered by Daniel ⚡︎'
+global.textbot = 'Nixie Bot : Daniel 🚩'
 global.vs = '2.0.6'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
