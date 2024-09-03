@@ -25,7 +25,7 @@ global.prems = []
 //cambiar a true si el bot detecta sus propios comandos.
 global.isBaileysFail = false
 global.libreria = 'Baileys'
-global.baileys = 'V 6.7.6'
+global.baileys = '@whiskeysockets/baileys'
 global.sessions = 'MiniSession'
 global.jadi = 'MiniJadiBot'
 
