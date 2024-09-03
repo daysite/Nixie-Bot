@@ -31,11 +31,9 @@ return conn.reply(m.chat, '🚩 *No se encontró una resolución adecuada.*', m,
 let video = data.url
 try {
 //await m.react(rwait)
-await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*\n' + textbot, fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: m })
+await conn.sendMessage(m.chat, { video: { url: video }, caption: '🍟 *Tu video de facebook.*\n' + author, fileName: 'fb.mp4', mimetype: 'video/mp4' }, { quoted: m })
 await m.react(done)
 } catch {
-//await m.react(error)
-//return conn.reply(m.chat, '🚩 *Error al enviar el video.*', m, rcanal)}}
 
 handler.help = ['facebook', 'fb']
 handler.tags = ['descargas']
