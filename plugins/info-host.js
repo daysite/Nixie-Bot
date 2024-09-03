@@ -41,7 +41,7 @@ title: `🤖 NEXUS PRO.HOST 🤖`,
 body: `¡El Mejor Host que necesitas!_`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/f6ae0f43d5baab2edd028.jpg', 
-sourceUrl: redeshost}}},
+sourceUrl: channel}}},
 { quoted: m})
 } 
 handler.tags = ['main'] 
