@@ -8,27 +8,22 @@ let txt = `*¿Tu Nokia es muy lento y necesitas que tu bot esté activo 24/7?* �
 🟢 \`\`\`Información del Host\`\`\`
 
 💻 *Página:*
-https://dash.corinplus.com
+https://dash.nexus-host.shop
 
 *🟢 Dashboard:*
-https://dash.corinplus.com
+https://dash.nexus-host.shop
 
 ⚙️ *Panel*
-https://ctrl.corinplus.com
+https://panel.nexus-host.shop
 
 💥 *Comunidad de WhatsApp:*
-https://chat.whatsapp.com/HR3OLhsuZPqCMImzuHcuON
-
-*🟣 Discord:*
-https://discord.com/invite/bjKpRBtkHv
+https://chat.whatsapp.com/CUuemMklVIo3Oc2t3DkZ4K
 
 🧡 *Canal de WhatsApp:*
-https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g
+https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33
 
 🗣📲 *Contacto:*
-• wa.me/5214531287294
-• wa.me/573147616444
-• https://www.facebook.com/elrebelde21
+• wa.me/51923300039
 
 No esperes más y lleva tu bot al siguiente nivel con nuestro servicio de alojamiento. ¡Es fácil, rápido y económico! 💪🚀` 
 await conn.sendMessage(m.chat, { text: txt,
@@ -36,14 +31,14 @@ contextInfo:{
 forwardedNewsletterMessageInfo: { 
 newsletterJid: '120363301598733462@newsletter', 
 serverMessageId: '', 
-newsletterName: 'CorinPlus-Host ☁️' }, 
+newsletterName: 'Nexus Pro - Hosting 🧧' }, 
 forwardingScore: 9999999,
 isForwarded: true, 
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `🤖 𝐂O𝐑𝐈𝐍𝐏𝐋𝐔𝐒-𝐇𝐎𝐒𝐓 🤖`,
-body: `¡El plus que necesitas!_`,
+title: `🤖 NEXUS PRO.HOST 🤖`,
+body: `¡El Mejor Host que necesitas!_`,
 "previewType": "PHOTO",
 thumbnailUrl: 'https://telegra.ph/file/551d3d544d7bc607fd337.jpg', 
 sourceUrl: redeshost}}},
