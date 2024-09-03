@@ -29,7 +29,7 @@ No esperes más y lleva tu bot al siguiente nivel con nuestro servicio de alojam
 await conn.sendMessage(m.chat, { text: txt,
 contextInfo:{
 forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363301598733462@newsletter', 
+newsletterJid: '', 
 serverMessageId: '', 
 newsletterName: 'Nexus Pro - Hosting 🧧' }, 
 forwardingScore: 9999999,
@@ -40,9 +40,9 @@ isForwarded: true,
 title: `🤖 NEXUS PRO.HOST 🤖`,
 body: `¡El Mejor Host que necesitas!_`,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://telegra.ph/file/551d3d544d7bc607fd337.jpg', 
+thumbnailUrl: 'https://telegra.ph/file/f6ae0f43d5baab2edd028.jpg', 
 sourceUrl: redeshost}}},
-{ quoted: fkontak})
+{ quoted: m})
 } 
 handler.tags = ['main'] 
 handler.help = ['host', 'hosting'] 
