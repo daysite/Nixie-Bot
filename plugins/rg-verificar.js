@@ -28,8 +28,7 @@ let regbot =`🗃️ *R E G I S T R A D O* 🗃️\n
 🍫 *Chocolates*: 10
 🍭 *Dulces*: 5
 🧃 *Jugo*: 1
-🍻 *Cerveza*: 3\n
-🧧 *Numero de serie*:`
+🍻 *Cerveza*: 3`
 await m.reply(regbot)
 // await conn.sendUrl(m.chat, regbot, m, { externalAdReply: { mediaType: 1, renderLargerThumbnail: true, thumbnail: pp, thumbnailUrl: pp, title: 'Registrado 📩', }})
 
