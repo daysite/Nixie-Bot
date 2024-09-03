@@ -16,16 +16,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/DanielDiod/Nixie-Bot",
+"homepage": "https://github.com/daysite/Nixie-Bot",
 "author": {
 "name": "Daniel"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/DanielDiod/Nixie-Bot.git"
+"url": "git+https://github.com/daysite/Nixie-Bot.git"
 },
 "bugs": {
-"url": "https://github.com/DanielDiod/Nixie-Bot/issues"
+"url": "https://github.com/DanielDiod/daysite/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
