@@ -46,5 +46,5 @@ sourceUrl: channel,
 } 
 handler.tags = ['main'] 
 handler.help = ['host', 'hosting'] 
-handler.command = ['host', 'nexus', 'nexuspro', 'hosting']
+handler.command = ['host', 'corin', 'corinplus', 'hosting']
 export default handler
