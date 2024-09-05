@@ -60,7 +60,7 @@ Tiempo Activo: *${uptime}*
 🚩 *NodeJS Uso de memoria*
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
-const prep = generateWAMessageFromContent(m.chat, { "orderMessage": { "orderId":"6288215463787", "itemCount": 2022, "message": infobt, "orderTitle": wm, "footerText": "Nixie Bot - MD", "token": "AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA==", "thumbnail": "https://telegra.ph/file/b8240f359eabfaa657286.jpg", "surface": "CATALOG" } }, { quoted: m })
+const prep = generateWAMessageFromContent(m.chat, { "orderMessage": { "orderId":"6288215463787", "itemCount": 2022, "message": infobt, "orderTitle": wm, "footerText": "Nixie Bot - MD", "token": "AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA==", "thumbnail": imagen1, "surface": "CATALOG" } }, { quoted: m })
 await conn.relayMessage(m.chat, prep.message,  { messageId: prep.key.id })
 
 }
