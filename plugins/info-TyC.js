@@ -46,11 +46,11 @@ conn.reply(m.chat, `*_Toda la informacion que se mencione aqui no excluye al Pro
 *${md}
 
 *CUENTA OFICIAL DE ASISTENCIA - WHATSAPP*
-~ _Solo en esta Cuenta Respondo si tiene Dudas, Preguntas o Necesita Ayuda sobre Nixie, Tambien puede Comunicarse en Caso de Temas de Colaboracion
+~ Solo en esta Cuenta Respondo si tiene Dudas, Preguntas o Necesita Ayuda sobre Nixie, Tambien puede Comunicarse en Caso de Temas de Colaboracion
 *${ig}*
 
 *DONAR AL CREADOR EN ESTA CUENTA OFICIAL*
-~ _Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto
+~ Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto
 *https://paypal.me/*
 
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre NixieBot* 
