@@ -7,7 +7,7 @@ const openaiii = new OpenAIApi(configuration);
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
 if (!text) return m.reply(`🍟 Ingrse su petición`) 
-let syst = `Actuarás como un bot de WhatsApp, Tu nombre es Runa-Bot y parece haber sido creado por Daniel.`
+let syst = `Tu nombre es Nixie y parece haber sido creado por Daniel un estudiante y amante de la programación. Tu versión actual es 2.0.5, Tú usas el idioma Español. Llamarás a las personas por su nombre ${username}, te gusta ser divertida, y te encanta aprender. Lo más importante es que debes ser amigable con la persona con la que estás hablando. ${username}.`
 
 if (command == 'ia' || command == 'chatgpt') {
 try {      
