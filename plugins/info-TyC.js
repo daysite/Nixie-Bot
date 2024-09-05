@@ -1,6 +1,6 @@
 const handler = async (m, {conn}) => {
 
-conn.reply(m.chat, `*_Toda la informacion que se mencione aqui no excluye al Propietario del Bot, y Propietarios Acredores al uso de Nixie Bot*
+conn.reply(m.chat, `*Toda la informacion que se mencione aqui no excluye al Propietario del Bot, y Propietarios Acredores al uso de Nixie Bot*
 *No Somos responsables del desconocimiento que tenga por parte de esta informacion.* 
 
 
@@ -42,12 +42,12 @@ conn.reply(m.chat, `*_Toda la informacion que se mencione aqui no excluye al Pro
 - Al hacer uso de ciertos comandos que tengan como objetivo socavar la incomodidad, intranquilidad, molestia u otro termino tajante, se tomarian las respectivas sanciones o llamados de alerta para prevalecer la integridad de los/las Usuarios(as) y funcionamiento de Nixie Bot.
 
 
-*ESTE ES EL REPOSITORIO OFICIAL*
+*PANEL DONDE ESTA ALOJADO NIXIE*
 *${md}
 
-*CUENTA OFICIAL DE ASISTENCIA - WHATSAPP*
+*CUENTA OFICIAL DE ASISTENCIA - GMAIL*
 ~ Solo en esta Cuenta Respondo si tiene Dudas, Preguntas o Necesita Ayuda sobre Nixie, Tambien puede Comunicarse en Caso de Temas de Colaboracion
-*${ig}*
+*• ${global.correo}*
 
 *DONAR AL CREADOR EN ESTA CUENTA OFICIAL*
 ~ Si te Agrada y valoras el Trabajo que he realizado, puedes ayudarme en Donar para que pueda continuar en este Proyecto
