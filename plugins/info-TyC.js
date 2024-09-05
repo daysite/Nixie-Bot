@@ -55,7 +55,7 @@ conn.reply(m.chat, `*Toda la informacion que se mencione aqui no excluye al Prop
 
 *~ Muchas Gracias Por tomarte el tiempo en informate sobre NixieBot* 
 
-${global.packname}`, m, rcanal)
+${global.packname}`, m )
 
 }
 handler.customPrefix = /términos y condiciones y privacidad|terminos|terminosycondiciones|terminos y condiciones y privacidad|terminos y condiciones|terminos y condiciones|terminos de uso|Terminos de uso|Terminó se uso|términos de uso|Términos de uso|Términos y condiciones/i
