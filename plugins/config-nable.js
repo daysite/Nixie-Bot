@@ -261,21 +261,13 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 *Descripción:* Envia un mensaje de bienvenida al usuario que es nuevo
 *Ejemplo:* ${usedPrefix + command} welcome
 
-*Tipo:* autoread
-*Descripción:* El Bot lee el mensaje automaticamente
-*Ejemplo:* ${usedPrefix + command} autoread
-
 *Tipo:* modoadmin 
 *Descripción:* Si esta función está activa el bot solo responderá a los administradores
 *Ejemplo:* ${usedPrefix + command} modoadmin
 
 *Tipo:* antilink 
 *Descripción:* Elimina al usuario que envie un link de algun grupo
-*Ejemplo:* ${usedPrefix + command} antilink
-
-*Tipo:* document 
-*Descripción:* Funcion Descarga En Documentos para el Usuario
-*Ejemplo:* ${usedPrefix + command} document`, m, rcanal)
+*Ejemplo:* ${usedPrefix + command} antilink`, m, rcanal)
       throw false
   }
   conn.reply(m.chat, `🚩 La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este Bot' : isUser ? '' : 'para este chat'}`, m, rcanal)
