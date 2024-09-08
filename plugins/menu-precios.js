@@ -176,7 +176,7 @@ await conn.sendList(m.chat, 'Prueba Menu', null, `Clik`, listSections, { mention
 
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menu', 'help', 'menú'] 
+handler.command = ['precios', 'comprar', 'metodos'] 
 handler.register = true 
 export default handler
 
