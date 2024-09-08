@@ -11,8 +11,8 @@ import moment from 'moment-timezone'
 
 global.owner = [
    ['51923300039', 'Dev Daniel', true],
-   ['573218138672', 'Owner 🍭', true],
-   ['5351524614']
+   ['51994143761', 'Owner', true],
+   ['51994143761']
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -58,8 +58,8 @@ global.grupo3 = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s' //team oficia
 global.grupo4 = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s' //GataBot & YaemoriBot
 global.channel = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
 global.channel2 = 'https://whatsapp.com/channel/0029VaBpO8M3rZZdwkGFIP33'
-global.md = 'https://dash.nexus-host.shop' 
-global.yt = 'https://panel.nexus-host.shop'
+global.md = 'https://store.azuraultra-host.pro' 
+global.yt = 'https://control.azuraultra-host.pro'
 global.tiktok = 'https://chat.whatsapp.com/G9MpDVmJtbiIpItEZpg70s'
 global.correo = 'danieldevelop3@gmail.com'
 
