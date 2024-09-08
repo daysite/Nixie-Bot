@@ -172,7 +172,7 @@ rows: [{ header: "metodos de pago", title: "", id: `.que`, description: `Para ve
 { header: "plan 8", title: "", id: `.plan8`, description: `para plan 8\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
-await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\n*Bienvenidos al menu de precios de azura\n\n*🍟Aviso:*\n\nElija el plan que mas se acomode a su preosupuesto 👏🏻\n\n> `LOS MEJORES SERVIDORES SOLO CON AZURA`', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\n*Bienvenidos al menu de precios de azura\n\n> `🔰 AVISO:`\n\nElija el plan que mas se acomode a su preosupuesto 👏🏻\n\n> `LOS MEJORES SERVIDORES SOLO CON AZURA`', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '🍟 Lo sentimos, el menú tiene un error.', m)
     throw e
