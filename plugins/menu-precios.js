@@ -163,13 +163,13 @@ let listSections = []
 listSections.push({
 title: '',
 rows: [{ header: "metodos de pago", title: "", id: `.que`, description: `Para ver métodos de pago\n` }, { header: "plan 1", title: "", id: `.plan1`, description: `Para el plan 1\n` },
-{ header: "plan 2", title: "", id: `.plan2`, description: `para plan 2\n` },
-{ header: "plan 3", title: "", id: `plan3`, description: `para plan 3\n` },
-{ header: "plan 4", title: "", id: `.plan4`, description: `para plan 4\n` },
-{ header: "plan 5", title: "", id: `.plan5`, description: `para plan 5\n` },
-{ header: "plan 6", title: "", id: `.plan6`, description: `para plan 6\n` },
-{ header: "plan 7", title: "", id: `.plan7`, description: `para plan 7\n` },
-{ header: "plan 8", title: "", id: `.plan8`, description: `para plan 8\n` },
+{ header: "Plan 2", title: "", id: `.plan2`, description: `Ver precios del plan 2\n` },
+{ header: "Plan 3", title: "", id: `plan3`, description: `Ver precios del plan 3\n` },
+{ header: "Plan 4", title: "", id: `.plan4`, description: `Ver precios del plan 4\n` },
+{ header: "Plan 5", title: "", id: `.plan5`, description: `Ver precios del plan 5\n` },
+{ header: "Plan 6", title: "", id: `.plan6`, description: `Ver precios del plan 6\n` },
+{ header: "Plan 7", title: "", id: `.plan7`, description: `Ver precios del plan 7\n` },
+{ header: "Plan 8", title: "", id: `.plan8`, description: `Ver precios del plan 8\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
 await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\nBienvenidos al menu de precios de azura\n\n> `🔰 AVISO:`\n\nElija el plan que mas se acomode a su presupuesto👏🏻\n\n> `LOS MEJORES SERVIDORES SOLO CON AZURA`', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
