@@ -166,9 +166,13 @@ rows: [{ header: "metodos de pago", title: "", id: `.que`, description: `Para ve
 { header: "plan 2", title: "", id: `.plan2`, description: `para plan 2\n` },
 { header: "plan 3", title: "", id: `plan3`, description: `para plan 3\n` },
 { header: "plan 4", title: "", id: `.plan4`, description: `para plan 4\n` },
+{ header: "plan 5", title: "", id: `.plan5`, description: `para plan 5\n` },
+{ header: "plan 6", title: "", id: `.plan6`, description: `para plan 6\n` },
+{ header: "plan 7", title: "", id: `.plan7`, description: `para plan 7\n` },
+{ header: "plan 8", title: "", id: `.plan8`, description: `para plan 8\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
-await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\n*Author:Daniel\n*Versión Actual:* 1.0.0\n\n*🍟Aviso:*\nEl Bot aun esta en desarrollo , Espero sea de vuestro agrado', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\n*Bienvenidos al menu de precios de azura\n\n*🍟Aviso:*\nAzura el mejor hosting actualmente, ofreciendo servidores de calidad a un precio económico', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '🍟 Lo sentimos, el menú tiene un error.', m)
     throw e
