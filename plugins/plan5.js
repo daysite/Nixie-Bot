@@ -1,6 +1,6 @@
 const handler = async (m, {conn}) => {
 
-conn.reply(m.chat, `🛍️ Precios Plan 2
+conn.reply(m.chat, `🛍️ Precios Plan 5
 
   •$5.00 USD
   •5400 AzuraCoins
