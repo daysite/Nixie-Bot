@@ -19,6 +19,6 @@ Este Plan ya es mas recomendable para el uso de bots no tan pesados.
 > ${global.packname}`, m, rcanal)
 
 }
-handler.customPrefix = /plan1|planes1/i
+handler.customPrefix = /plan2|planes2/i
 handler.command = new RegExp
 export default handler
