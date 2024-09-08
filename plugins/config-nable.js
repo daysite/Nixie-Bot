@@ -255,55 +255,15 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     break
     default:
       if (!/[01]/.test(command)) return conn.reply(m.chat, `
-*🍟 Ingresa una opción para habilitar o deshabilitar*
+*🔰 Ingresa una opción para habilitar o deshabilitar*
 
 *Tipo:* welcome 
 *Descripción:* Envia un mensaje de bienvenida al usuario que es nuevo
 *Ejemplo:* ${usedPrefix + command} welcome
 
-*Tipo:* antiprivado
-*Descripción:* No permite que el bot le escriban al privado
-*Ejemplo:* ${usedPrefix + command} antiprivado
-
-*Tipo:* antibot
-*Descripción:* Elimina a cualquier otro Bot que entre al grupo 
-*Ejemplo:* ${usedPrefix + command} antibot
-
-*Tipo:* reaccion
-*Descripción:* El Bot reacciona con emojisba cualquier mensaje
-*Ejemplo:* ${usedPrefix + command} reaccion
-
-*Tipo:* subbots
-*Descripción:* No permiten ser subbot
-*Ejemplo:* ${usedPrefix + command} subbots
-
-*Tipo:* simi
-*Descripción:* El bot te responde con mensajes random
-*Ejemplo:* ${usedPrefix + command} simi
-
-*Tipo:* audios
-*Descripción:* El Bot envia audios
-*Ejemplo:* ${usedPrefix + command} audios
-
 *Tipo:* autoread
 *Descripción:* El Bot lee el mensaje automaticamente
 *Ejemplo:* ${usedPrefix + command} autoread
-
-*Tipo:* antiver
-*Descripción:* No pueden ocultar imagen/audio que es ver de una sola vez
-*Ejemplo:* ${usedPrefix + command} antiver
-
-*Tipo:* detect 
-*Descripción:* Informacion de cualquira configuración del grupo
-*Ejemplo:* ${usedPrefix + command} detect
-
-*Tipo:* status
-*Descripción:* Cambia la info del Bot cada 1 seg
-*Ejemplo:* ${usedPrefix + command} status
-
-*Tipo:* nsfw 
-*Descripción:* Permitir que los usuarios usen comandos +18
-*Ejemplo:* ${usedPrefix + command} nsfw
 
 *Tipo:* modoadmin 
 *Descripción:* Si esta función está activa el bot solo responderá a los administradores
