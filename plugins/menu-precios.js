@@ -176,7 +176,7 @@ await conn.sendList(m.chat, '\`•/• Menu - Lista •/•`\n\n*Author:Daniel\n
 
 handler.help = ['precios']
 handler.tags = ['main']
-handler.command = ['precios', 'comprar', 'metodos'] 
+handler.command = ['comprar', 'precios', 'metodos'] 
 handler.register = true 
 export default handler
 
