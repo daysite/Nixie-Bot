@@ -21,7 +21,6 @@ txt += `> Link : *https://www.youtube.com/watch?v=${videoId}*\n`;
 await conn.sendButton(m.chat, txt, author, thumbnail, [
 ['Audio', `${usedPrefix}ytmp3 ${url}`],
 ['Video', `${usedPrefix}ytmp4 ${url}`]
-['Mas Resultados', `${usedPrefix}yts ${url}`]
 ], null, [['Hosting', md]], m);
 await m.react('✅')
 }
