@@ -165,6 +165,7 @@ title: '',
 rows: [{ header: "metodos de pago", title: "", id: `.que`, description: `Para ver métodos de pago\n` }, { header: "plan 1", title: "", id: `.plan1`, description: `Para el plan 1\n` },
 { header: "plan 2", title: "", id: `.plan2`, description: `para plan 2\n` },
 { header: "plan 3", title: "", id: `plan3`, description: `para plan 3\n` },
+{ header: "plan 4", title: "", id: `.plan4`, description: `para plan 4\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
 await conn.sendList(m.chat, '\`•/• Menu - Azura •/•`\n\n*Author:Daniel\n*Versión Actual:* 1.0.0\n\n*🍟Aviso:*\nEl Bot aun esta en desarrollo , Espero sea de vuestro agrado', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
