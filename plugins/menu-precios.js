@@ -167,7 +167,7 @@ rows: [{ header: "metodos de pago", title: "", id: `.que`, description: `Para ve
 { header: "plan 3", title: "", id: `plan3`, description: `para plan 3\n` },
 { header: "creador", title: "", id: `.creador`, description: `comunicate con mi creador ⚙️` }
 ]})
-await conn.sendList(m.chat, 'Prueba Menu', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
+await conn.sendList(m.chat, '\`•/• Menu - Lista •/•`\n\n*Author:Daniel\n*Versión Actual:* 1.0.0\n\n*🍟Aviso:*\nEl Bot aun esta en desarrollo , Espero sea de vuestro agrado', null, `Clik`, listSections, { mentions: [m.sender]}, {quoted: m})
   } catch (e) {
     conn.reply(m.chat, '🍟 Lo sentimos, el menú tiene un error.', m)
     throw e
