@@ -174,7 +174,7 @@ await conn.sendList(m.chat, '\`•/• Menu - Lista •/•`\n\n*Author:Daniel\n
   }
 }
 
-handler.help = ['menu']
+handler.help = ['precios']
 handler.tags = ['main']
 handler.command = ['precios', 'comprar', 'metodos'] 
 handler.register = true 
