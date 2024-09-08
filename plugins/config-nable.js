@@ -267,10 +267,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 
 *Tipo:* antilink 
 *Descripción:* Elimina al usuario que envie un link de algun grupo
-*Ejemplo:* ${usedPrefix + command} antilink`, m, rcanal)
+*Ejemplo:* ${usedPrefix + command} antilink
+
+*Tipo:* document 
+*Descripción:* Funcion Descarga En Documentos para el Usuario
+*Ejemplo:* ${usedPrefix + command} document`, m, rcanal)
       throw false
   }
-  conn.reply(m.chat, `🚩 La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este Bot' : isUser ? '' : 'para este chat'}`, m, rcanal)
+  conn.reply(m.chat, `🍥 La función *${type}* se *${isEnable ? 'activó' : 'desactivó'}* ${isAll ? 'para este Bot' : isUser ? '' : 'para este chat'}`, m, rcanal)
 }
 
 handler.help = ['enable', 'disable']
