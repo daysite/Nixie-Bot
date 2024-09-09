@@ -1,46 +1,29 @@
-/*import fetch from 'node-fetch'
-import axios from 'axios'
+import { igdl } from "ruhend-scraper"
 
-var handler = async (m, {conn, text, command, usedPrefix }) => {
- 
-if (!text) {
-return m.reply('Falta enlace')//conn.reply(m.chat, `☁️ Ingrese un enlace de instagram\n\nEjemplo >${usedPrefix + command} https://www.instagram.com/reel/CuqAzGRAbZa/?igshid=MzRlODBiNWFlZA==`, m)
-}
- 
-conn.reply(m.chat, `🍟 Espere un momento soy lenta...`, m)
-
-if (!text.includes('instagram')) {
-return m.reply('Enlace no válido. Compruebe el enlace')
-}
-
+let handler = async (m, { args, conn }) => { 
+if (!args[0]) {
+return conn.reply(m.chat, '`Ingresa un link de Instagram`', m, rcanal)}
 try {
-const data = await fetch(`https://lolhuman.xyz/api/instagram?apikey=GataDiosV2&url=${text}`)
-let video = await data.json()
-let buff = await video.result[0]
+//await m.react(rwait)
+/*conn.reply(m.chat, `🕒 *Enviando El Video...*`, m, {
+contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, showAdAttribution: true,
+title: packname,
+body: wm,
+previewType: 0, thumbnail: icons,
+sourceUrl: channel }}})*/      
+let res = await igdl(args[0])
+let data = res.data       
+for (let media of data) {
+await new Promise(resolve => setTimeout(resolve, 2000))           
+await conn.sendFile(m.chat, media.url, 'instagram.mp4', '`Aqui tiene`.*\n' + textbot, m)
+}} catch {
+await m.react(error)
+conn.reply(m.chat, '🚩 Ocurrió un error.', m, rcanal)}}
 
-const caption = `Instagram 🍃`
-
-await conn.sendMessage(m.chat, { video: { url: buff }, mimetype: 'video/mp4', fileName: `video.mp4`, caption: caption, mentions: [m.sender], }, { quoted: m })
-
-} catch (e) {
-m.reply('Ha ocurrido un error al descargar su solicitud: ' + e)
-}
- 
-}
-handler.help = ['ig']
+handler.command = ['instagram', 'ig']
 handler.tags = ['descargas']
-handler.command = /^(instagramdl|instagram|igdl|ig|instagramdl2|instagram2|igdl2|ig2|instagramdl3|instagram3|igdl3|ig3)$/i
-
+handler.help = ['instagram', 'ig']
+handler.estrellas = 1
 handler.register = true
-handler.limit = true
-
-export default handler*/
-
-const handler = async(m, { text }) => {
-if (!text) {
-return m.reply('.ig https://www.instagram.com/reel/C--LbImuITr/?igsh=bTA2M25saHk3cHM1')
-}
-}
-handler.command = ['ig']
 
 export default handler
