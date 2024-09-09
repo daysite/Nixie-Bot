@@ -96,6 +96,12 @@ let menu = `
 🎐.status
 🎐.uptime
 
+*•/• Hosting •/•*
+
+🍿.metodos
+🍿.precios
+🍿.comprar
+
 *•/• Downloaders •/•*
 
 🍟.fb
