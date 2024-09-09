@@ -96,7 +96,7 @@ let menu = `
 🎐.status
 🎐.uptime
 
-*•/• Hosting •/•*
+*•/• Azura Hosting •/•*
 
 🍿.metodos
 🍿.precios
