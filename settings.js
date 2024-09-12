@@ -33,6 +33,7 @@ global.prems = []
 global.isBaileysFail = false
 global.libreria = 'Baileys'
 global.baileys = '@whiskeysockets/baileys'
+global.nameqr = 'Nixie Bot - MD'
 global.sessions = 'MiniSession'
 global.jadi = 'MiniJadiBot'
 
